@@ -8,6 +8,8 @@ namespace YourGarage
 {
     class Car : Vehicle
     {
+        public string Model { get; set; }
+
         public void Brake()
         {
             Console.WriteLine("The car is now braking");
@@ -16,6 +18,11 @@ namespace YourGarage
         public override void Refuel()
         {
             Console.WriteLine("The car is now being refueled");
+        }
+
+        public void UseWipers()
+        {
+            Console.WriteLine("The car is using its windshield wipers");
         }
     }
 }

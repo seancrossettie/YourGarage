@@ -8,6 +8,7 @@ namespace YourGarage
 {
     abstract class Vehicle
     {
+        public string Name { get; set; }
         public int FuelCapacity { get; set; }
         public Color Color { get; set; }
         public int Occupancy { get; set; }
